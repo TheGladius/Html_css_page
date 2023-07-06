@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<projekt  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schema.xsd">
+    <autor>
+        <imie>Jakub</imie>
+        <nazwisko>Sadowski</nazwisko>
+    </autor>
+    <historia>
+        <tekst>
+            <title>Historia fast foodów</title>
+            <przedmowa>Zastanawialiście się kiedyś, kto wymyślił takie szybkie, uliczne przysmaki? Wydawać by się mogło, że ich geneza wiąże się z otwarciem słynnego McDonald’sa i innych sieci fast foodów w Ameryce na początku dwudziestego wieku. Okazuje się jednak, że fast food powstał dużo, dużo wcześniej.</przedmowa>
+            <epoka czas="starozytnosc">
+                <subtitle>Fast food w starożytności</subtitle>
+                <opis>Już na ulicach starożytnych miast kwitł handel tanią żywnością od razu gotową do spożycia. W Grecji najpopularniejsze były suszone ryby. W Rzymie można było kupić zupę z ciecierzycy, podawaną z pieczywem i makaronem, dużym uznaniem cieszył się również gotowany lub prażony bób, smażone ryby, kiełbaski wieprzowe, gulasz z kuropatwy czy jajka sadzone.</opis>
+                <opis>Pierwszy przepis na starożytnego hamburgera można znaleźć w dziele „O sztuce kulinarnej ksiąg dziesięć” napisanej przez Marka Gawiusza Apicjusza w IV lub V wieku n.e. Prekursor współczesnego burgera zwie się „isicia omentata”, a robiono go z mięsa mielonego, wina i pieprzu. Kotlety te smażono na ruszcie i wsadzano w bułkę. Obficie polewano je również garum, czyli słynnym sosem przygotowanym ze sfermentowanych ryb, który rzymianie podawali prawie do wszystkiego.</opis>
+                <opis>W Pompejach odnaleziono pozostałości około 150 różnych restauracji typu „fast-food”, które nazywano thermopolia. Można było w nich nabyć tanie jedzenie i alkohol, bardzo często brane na wynos. Takie miejsca składały się z jednego małego pomieszczenia, otwartego bezpośrednio na ulicę, z charakterystycznym blatem z dziurami, do którego wkładano gliniane słoje z jedzeniem i winem. Niektóre thermopolia były budowane w taki sposób, aby potencjalny klient mógł zakupić jedzenie bez potrzeby wysiadania z wozu. Bary te cieszyły się uznaniem wśród biedniejszej części populacji, która często nawet nie miała kuchni w swoich domach. Bogaci Rzymianie jadali w domu, ich wystawne uczty przygotowywali prywatni kucharze.</opis>
+                <opis>Nawet w czasach rzymskich klienci martwili się o jakość fast foodów. Krążyły plotki o ludzkim mięsie, nawet palcach, które odnajdywano w posiłkach.</opis>
+            </epoka>
+            <epoka czas="sredniowiecze">
+                <subtitle>Fast food w średniowieczu</subtitle>
+                <opis>Fast food radził sobie dobrze praktycznie w każdych czasach. Tam gdzie większe skupiska ludności, tam również pojawiała się potrzeba szybkich i tanich posiłków. W średniowiecznej Europie duże obszary miejskie, wspierały licznych sprzedawców, u których można było nabyć gotowe dania, takie jak ciasta, pasty, gofry, wafle, paszteciki, naleśniki i gotowane mięsa. Również Aztekowie mieli sprzedawców na swoich targowiskach, którzy sprzedawały atolli (czyli kleik z ciasta kukurydzianego), tamales z różnymi rodzajami już gotowanego mięsa, czy pieczone insekty.</opis>
+            </epoka>
+            <epoka czas="pozne_sredniowiecze">
+                <subtitle>Historia kebaba</subtitle>
+                <opis>Przyjrzyjmy się bliżej jednemu z najbardziej lubianych fast foodów w Polsce – kebabowi.</opis>
+                <opis>Uważa się, że potrawa powstała w średniowiecznej Persji i Turcji, a wymyślili ją żołnierze, którzy opiekali nad ogniem mięso nadziane na miecze. Nazwa kebab jako określenie artykułu spożywczego pierwszy raz pojawia się w tureckim piśmie Kissa-i Yusuf (czyli historia Józefa) z 1377 roku.</opis>
+                <opis>Średniowieczne kebaby to prostu szaszłyki. Dopiero w XIX w Anatolii powstały pierwsze pionowe rożna, które zrewolucjonizowały sposób przyrządzania mięsa. Przyjmuje się, że wymyślił je Iskender Efendi z Bursy około 1870 r.</opis>
+                <opis>Powstała wtedy najbardziej znana nam odmiana kebaba – Döner. Pokrojone mięso zyskało ogromną popularność w Turcji. Pierwszy lokal z kebabem podawanym w bułce został otwarty w Istambule w 1945 roku i stał się prawdziwym hitem wśród miejskiej elity. Natomiast do Europy kebab trafił dopiero na przełomie lat 60. i 70. za sprawą masowo migrujących do Anglii, a przede wszystkim Niemiec, Turków.</opis>
+            </epoka>
+            <epoka czas="nowozytnosc">
+                <subtitle>Automaty</subtitle>
+                <opis>Jednym z kamieni milowych w powstaniu nowoczesnych restauracji typu fast food było wynalezienie przez Maxa Sielaffa w 1896 r. w Berlinie automatów, które podawały proste produkty spożywcze i napoje.</opis>
+                <opis>Osiem lat później Joseph Horn i James Hardart otworzyli pierwszą samoobsługową restaurację The Automat w Stanach Zjednoczonych.</opis>
+                <opis>Szybkie i efektywne jadłodajnie były darami niebios dla robotników miejskich, którzy nie mieli dużo czasu na przerwę obiadową. Bez kelnerów, którym trzeba by było dać napiwki, z daniami po pięć lub dziesięć centów, restauracje były atrakcyjne ekonomicznie dla biednych mieszkańców Nowego Jorku i innych amerykańskich miast.</opis>
+                <opis>Chociaż automaty Horn and Hardart dostarczały jedzenie szybko, posiłki były wytwarzane od zera przy użyciu świeżych, wysokiej jakości składników. Dania były przygotowane na krótko przed zjedzeniem, a jedzenie nie mogło pozostać na nocy. Świeżo wyciśnięty sok pomarańczowy, który nie został sprzedany przez dwie godziny, spływał do ścieku. Olśniewające otoczenie automatów Horn and Hardart – z marmurowymi blatami i podłogami, witrażami, chromowanymi oprawami, pięknie rzeźbionymi sufitami i oznakowaniem w stylu Art Deco – bardziej przypominało paryskie bistro niż sterylne, obskurne fast foody. Jedzenie było podawane na prawdziwej porcelanie i spożywane solidnymi sztućcami. Kawa płynęła ze srebrnych wylewów delfinów, które Joseph Horn znalazł we Włoszech.</opis>
+                <opis>Automaty Horn and Hardart były szczególnie popularne w czasach Wielkiego Kryzysu, kiedy ich makarony z serem, fasolka po bretońsku i szpinak ze śmietaną były podstawowymi produktami. Do czasu śmierci Horn’a w 1941 roku firma miała 157 sklepów detalicznych i restauracji w Filadelfii i Nowym Jorku i obsługiwała pół miliona klientów dziennie.</opis>
+            </epoka>
+            <epoka czas="modernizm">
+                <subtitle>White Castle</subtitle>
+                <opis>Pierwszą siecią restauracji, która serwowała hamburgery była White Castle, założona w 1921 roku w Wichita w stanie Kansas. W tamtym czasie, podobnie zresztą jak dzisiaj, większość ludzi uważała, że hamburgery sprzedawane na targach, cyrkach, ladach obiadowych i wózkach są niskiej jakości. Założyciele White Castle postanowili zmienić zdanie opinii publicznej na temat hamburgerów. Zbudowali swoje restauracje, tak aby klienci mogli zobaczyć przygotowywane jedzenie. Pomalowali budynki na biało, a nawet wybrali nazwę, która sugerowała czystość. White Castle był najpopularniejszy na amerykańskim Wschodzie i Środkowym Zachodzie, ale jego sukces pomógł zdobyć lepszą reputację w całym kraju. Co najciekawsze, hamburgery podawano tam pod postacią małych, kwadratowych kanapek z mięsem zwanych sliderami.</opis>
+            </epoka>
+            <epoka czas="czasy_wspolczesne">
+                <subtitle>McDonald’s</subtitle>
+                <opis>W czasie kryzysu para młodych braci wyruszyła z rodzinnego New Hampshire na zachód z marzeniami o tym, by stać się wielkimi producentami w Hollywood. Jednak jedyną pracą, którą Richard i Maurice McDonald kiedykolwiek wykonywali w przemyśle filmowym, było prowadzenie małego kina, które otworzyli na przedmieściu Los Angeles. Gdy po czterech latach splajtowali, otworzyli budkę z hot dogami w pobliżu toru wyścigowego w miejscowości Arcadia, którą również musieli zamknąć.</opis>
+                <opis>W 1940 bracia McDonald otworzyli McDonald’s Bar-B-Que w San Bernardino w Kalifornii. Był to bar dla zmotoryzowanych, gdzie kelnerki przynosiły zamówienia do samochodów. Sprzedawano tam głównie dania z grilla. Braciom nie spodobał się jednak klientela, która składała się głównie z rozkrzyczanych nastolatków i motocyklistów, więc osiem lat później postanowili zmienić koncepcję restauracji, aby specjalizować się w bardziej dochodowym menu. Zaczęli sprzedawać mniejsze menu z hamburgerami, cheeseburgerami, frytkami, koktajlami, napojami bezalkoholowymi i szarlotką, a także skrócili nazwę do McDonald’s. Wprowadzili również system szybkiej obsługi, który nazwali „speedee service system”. W restauracji działały zasady obowiązujące w fabryce – w kuchni wszystko było zmechanizowane, a każdy pracownik odpowiadał tylko za jeden etap przygotowania posiłku.</opis>
+                <opis>Restauracja odniosła taki sukces, że do 1954 roku bracia otworzyli 9 nowych placówek i zawarli 21 umów franczyzowych.</opis>
+                <opis>W tym samym roku Ray Kroc kupił franczyzę i od tego czasu McDonald’s rozpoczyna jeszcze bardziej dynamiczną ekspansję. Do 1958 roku McDonald’s Corporation miał 34 restauracje, a w 1959 roku – 102. Ray Kroc, zwany Hamburger King wykupił braci McDonald w 1961 roku. Rok później McDonald’s otrzymał swoje znane dziś logo Golden Arches, a w następnym roku pojawił się Ronald McDonald, rudowłosy klaun.</opis>
+                <opis>Pierwsze rozmowy na temat uruchomienia w Polsce barów McDonald’s były prowadzone już pod koniec lat 70. dwudziestego wieku, jednak pierwszy bar otwarto dopiero 17 czerwca 1992 w Warszawie na rogu ulic Marszałkowskiej i Świętokrzyskiej. Koszt budowy wyniósł milion dolarów. W dniu otwarcia ustanowiony został rekord świata w liczbie transakcji: dokonano ich 13 300. Bar zamknięto 1 października 2014, ale sieć McDonald’s ma już ponad 400 lokali w całej Polsce.</opis>
+            </epoka>
+        </tekst>
+        <media>
+            <obrazki zrodlo="https://e-przepisykulinarne.pl/wp-content/uploads/2018/08/Dennis-Jarvis-2-768x510.jpg">Starożytna restauracja</obrazki>
+            <obrazki zrodlo="https://e-przepisykulinarne.pl/wp-content/uploads/2018/08/D%C3%B6nerci_1855.jpg">Uliczny sprzedawca mięsa</obrazki>
+            <obrazki zrodlo="https://e-przepisykulinarne.pl/wp-content/uploads/2018/08/mcdonalds-first-store.jpg">Pierwsza restouracja McDonald's</obrazki>
+            <obrazki zrodlo="https://bi.im-g.pl/im/41/f2/14/z21964865IH,Otwarcie-pierwszej-restauracji-McDonald-s-w-Polsce.jpg">Pierwsza restouracja McDonald's w Polsce</obrazki>
+            <link source="https://mcdonalds.pl/">McDonald's</link>
+            <link source="https://www.burgerking.pl/">Burger King</link>
+            <link source="https://kfc.pl/main/home/news">KFC</link>
+            <link source="https://mysubway.pl/">Subway</link>
+            <link source="https://www.yum.com/wps/portal/yumbrands/Yumbrands/company/our-brands/taco-bell">Taco Bell</link>
+        </media>
+        <dane>
+            <ile liczba="30000" firma="McDonald's"/>
+            <ile liczba="18000" firma="KFC"/>
+            <ile liczba="15000" firma="Burger King"/>
+            <ile liczba="42000" firma="Subway"/>
+            <ile liczba="6500" firma="Taco Bell"/>
+        </dane>
+    </historia>
+    <przepis>
+        <wstemp>Burgery wołowe przeżywają swoisty renesans, o czym świadczy coraz większa liczba burgerowni. Jednak z powodzeniem można też przygotować je w domu. Hamburgery domowe wyjdą taniej i zdrowiej! Podajemy łatwy przepis na domowe burgery.</wstemp>
+        <przygotowanie>
+            <naglowek>Przygotowanie krok po kroku:</naglowek>
+            <tresc>1.Wołowinę doprawiamy świeżo zmielonym czarnym pieprzem, nie solimy. Ewentualnie dodajemy inne ulubione przyprawy.</tresc>
+            <tresc>2.Wyrabiamy mięso tak jak na kotlety mielone, formujemy w płaskie placuszki. Możemy je grillować na patelni grillowej cienko posmarowanej olejem albo usmażyć na oleju. Po grillowaniu lub smażeniu burgery solimy.</tresc>
+            <tresc>3.Bułki przekrawamy na pół i opiekamy w piekarniku lub opiekaczu, by były chrupiące. Pomidory i cebulę kroimy w krążki. Sałatę myjemy i osuszamy.</tresc>
+            <tresc>4.Między połówki bułek wkładamy kolejno: sałatę, krążki pomidorów i cebulę jeśli się na nią zdecydowaliśmy (patrz składniki), burgery (posmarowane np. ostrym sosem). Gotowe hamburgery możemy podać z frytkami.</tresc>
+            <end>Smacznego!</end>
+        </przygotowanie>
+        <skladniki>
+            <rodzaj warzywo="nie" przyprawa="nie">
+                <nazwa>wołowina zmielona tak jak na tatar</nazwa>
+                <ilosc>od 150 g do 250 g na każdego burgera</ilosc>
+            </rodzaj>
+            <rodzaj warzywo="nie" przyprawa="nie">
+                <nazwa>bułki</nazwa>
+                <ilosc>2 sztuki na każdego burgera</ilosc>
+            </rodzaj>
+            <rodzaj warzywo="tak" przyprawa="nie">
+                <nazwa>sałata</nazwa>
+                <ilosc>1 sztuka</ilosc>
+            </rodzaj>
+            <rodzaj warzywo="tak" przyprawa="nie">
+                <nazwa>pomidory</nazwa>
+                <ilosc>	1-2 sztuki (zależy od ilości burgerów)</ilosc>
+            </rodzaj>
+            <rodzaj warzywo="tak" przyprawa="nie">
+                <nazwa>cebula</nazwa>
+                <ilosc>1 sztuka (opcjonalnie)</ilosc>
+            </rodzaj>
+            <rodzaj warzywo="nie" przyprawa="nie">
+                <nazwa>olej rzepakowy</nazwa>
+                <ilosc>trochę, do podsmażenia mięsa na patelni</ilosc>
+            </rodzaj>
+            <rodzaj warzywo="nie" przyprawa="nie">
+                <nazwa>ulubione sosy (łagodne lub ostre, np. salsa, barbecue)</nazwa>
+                <ilosc>wedle uznania</ilosc>
+            </rodzaj>
+            <rodzaj warzywo="nie" przyprawa="tak">
+                <nazwa>świeżo zmielony pieprz</nazwa>
+                <ilosc>szczypta</ilosc>
+            </rodzaj>
+            <rodzaj warzywo="nie" przyprawa="tak">
+                <nazwa>sól do smaku</nazwa>
+                <ilosc>szczypta</ilosc>
+            </rodzaj>
+        </skladniki>
+    </przepis>
+</projekt>

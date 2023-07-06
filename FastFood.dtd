@@ -1,0 +1,42 @@
+<?xml encoding="UTF-8"?>
+<!ELEMENT projekt (autor,historia,przepis)>
+
+<!ELEMENT historia (tekst,media,dane)>
+<!ELEMENT przepis (wstemp,przygotowanie,skladniki)>
+<!ELEMENT wstemp (#PCDATA)>
+<!ELEMENT autor (imie,nazwisko)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+
+<!ELEMENT tekst (title,przedmowa,epoka*)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT przedmowa (#PCDATA)>
+<!ELEMENT epoka (subtitle,opis*)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT opis (#PCDATA)>
+
+<!ATTLIST epoka czas CDATA #REQUIRED>
+
+<!ELEMENT media (obrazki*,link*)>
+<!ELEMENT obrazki (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+
+<!ATTLIST obrazki zrodlo CDATA #REQUIRED>
+<!ATTLIST link source CDATA #REQUIRED>
+
+<!ELEMENT dane (ile*)>
+<!ELEMENT ile EMPTY>
+
+<!ATTLIST ile liczba CDATA #REQUIRED firma CDATA #REQUIRED>
+
+<!ELEMENT przygotowanie (naglowek,tresc*,end)>
+<!ELEMENT naglowek (#PCDATA)>
+<!ELEMENT tresc (#PCDATA)>
+<!ELEMENT end (#PCDATA)>
+
+<!ELEMENT skladniki (rodzaj*)>
+<!ELEMENT rodzaj (nazwa,ilosc)>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT ilosc (#PCDATA)>
+
+<!ATTLIST rodzaj warzywo (tak|nie) "nie" przyprawa (tak|nie) "nie">

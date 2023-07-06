@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="projekt">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="historia">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="tekst">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="title" type="xs:string" />
+										<xs:element name="przedmowa" type="xs:string" />
+										<xs:element maxOccurs="unbounded" name="epoka">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="subtitle" type="xs:string" />
+													<xs:element maxOccurs="unbounded" name="opis" type="xs:string" />
+												</xs:sequence>
+												<xs:attribute name="czas" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="media">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="obrazki">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="zrodlo" type="xs:string" use="required" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element maxOccurs="unbounded" name="link">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="source" type="xs:string" use="required" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="dane">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="ile">
+											<xs:complexType>
+												<xs:attribute name="liczba" type="xs:unsignedShort" use="required" />
+												<xs:attribute name="firma" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="przepis">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="wstemp" type="xs:string" />
+							<xs:element name="przygotowanie">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="naglowek" type="xs:string" />
+										<xs:element maxOccurs="unbounded" name="tresc" type="xs:string" />
+										<xs:element name="end" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="skladniki">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="rodzaj">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="nazwa" type="xs:string" />
+													<xs:element name="ilosc" type="xs:string" />
+												</xs:sequence>
+												<xs:attribute name="warzywo" type="xs:string" use="required" />
+												<xs:attribute name="przyprawa" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

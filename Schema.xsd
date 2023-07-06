@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="projekt" type="projekt_type"/>
+    <xs:element name="historia" type="historia_type"/>
+    <xs:element name="przepis" type="przepis_type"/>
+    <xs:element name="tekst" type="tekst_type"/>
+	<xs:element name="media" type="media_type"/>
+	<xs:element name="dane" type="dane_type"/>
+    <xs:element name="skladniki" type="skladniki_type"/>
+    <xs:element name="przygotowanie" type="przygotowanie_type"/>
+    <xs:element name="title" type="title_type"/>
+    <xs:element name="subtitle" type="subtitle_type"/>
+	<xs:element name="naglowek" type="naglowek_type"/>
+    <xs:element name="nazwa" type="nazwa_type"/>
+	<xs:element name="end" type="end_type"/>
+
+    <xs:complexType name="projekt_type">
+    <xs:sequence>
+      <xs:element name="autor" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="imie" type="xs:string"/>
+            <xs:element name="nazwisko" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="historia"/>
+        <xs:element ref="przepis"/>
+    </xs:choice>
+    </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="historia_type">
+		<xs:sequence>
+			<xs:element ref="tekst"/>
+			<xs:element ref="media"/>
+			<xs:element ref="dane"/>
+		</xs:sequence>
+	</xs:complexType>
+
+    <xs:complexType name="przepis_type">
+		<xs:sequence>
+            <xs:element name="wstemp" type="xs:string"/>
+			<xs:element ref="przygotowanie"/>  
+			<xs:element ref="skladniki"/>
+		</xs:sequence>
+	</xs:complexType>
+
+    <xs:complexType name="tekst_type">
+		<xs:sequence>
+			<xs:element ref="title" minOccurs="0"/>
+			<xs:element name="przedmowa" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="epoka" type="epoka_type" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+    <xs:complexType name="media_type">
+		<xs:sequence>
+			<xs:element name="obrazki" type="obrazki_type" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="link" type="link_type" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="dane_type">
+		<xs:sequence>
+            <xs:element name="ile" type="ile_type" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="przygotowanie_type">
+		<xs:sequence>
+            <xs:element ref="naglowek" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="tresc" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="end" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+    <xs:complexType name="skladniki_type">
+		<xs:sequence>
+            <xs:element name="rodzaj" type="rodzaj_type" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+    <xs:complexType name="epoka_type">
+		<xs:sequence>
+			<xs:element ref="subtitle" maxOccurs="unbounded"/>
+            <xs:element name="opis" type="xs:string" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="czas" type="czas_type" use="required"/>
+	</xs:complexType>
+
+    <xs:complexType name="obrazki_type">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="zrodlo" type="xs:anyURI" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+    <xs:complexType name="link_type">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="source" type="xs:anyURI" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:group name="grupa">
+		<xs:sequence>
+			<xs:element ref="nazwa" maxOccurs="unbounded"/>
+            <xs:element name="ilosc" type="xs:string" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:group>
+
+	<xs:attribute name="warzywo" type="tak_nie"/>
+	<xs:attribute name="przyprawa" type="tak_nie"/>
+
+    <xs:complexType name="rodzaj_type">
+		<xs:sequence>
+			<xs:group ref="grupa" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="warzywo" use="required"/>
+        <xs:attribute ref="przyprawa" use="required"/>
+	</xs:complexType>
+
+    <xs:simpleType name="title_type">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="21"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+    <xs:simpleType name="subtitle_type">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="30"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+    <xs:simpleType name="czas_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="starozytnosc"/>
+			<xs:enumeration value="sredniowiecze"/>
+			<xs:enumeration value="pozne_sredniowiecze"/>
+            <xs:enumeration value="nowozytnosc"/>
+            <xs:enumeration value="modernizm"/>
+            <xs:enumeration value="czasy_wspolczesne"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+    <xs:simpleType name="tak_nie">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="tak|nie"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="naglowek_type">
+		<xs:restriction base="xs:string">
+			<xs:length value="28"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+    <xs:simpleType name="nazwa_type">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="60"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="end_type">
+		<xs:restriction base="xs:string">
+			<xs:length value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="ile_type">
+		<xs:attribute name="liczba">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="6500"/>
+					<xs:maxInclusive value="42000"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="firma">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="3"/>
+					<xs:maxLength value="11"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+</xs:schema>
